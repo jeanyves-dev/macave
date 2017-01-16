@@ -1,0 +1,375 @@
+body
+{
+	font-family      : calibri;
+	margin			 : 0; 
+	padding			 : 0;
+}
+
+.TablePrincipal
+{
+	width          : 100%;
+	border-spacing : 0px;
+	padding        : 0px;
+}
+
+.tdPrincipalHaut
+{
+	border-bottom : 2px solid black;
+}
+
+.tableEntete
+{
+	width            : 100%;
+}
+
+.tdPrincipalHaut
+{
+}
+
+.tdPrincipalTitre
+{
+	text-align       : Center;
+	font-weight      : bold;
+	font-size        : 20pt;	
+	padding-top      : 10px;
+	padding-bottom   : 20px;
+	color            : grey;
+	vertical-align   : center;
+	height 			 : 100%;
+	width            : 15%;
+}
+
+.tdBanniere
+{
+	width            : 70%;
+	text-align       : Center;
+
+}
+
+.tdAdmin
+{
+	text-align       : right;
+	width            : 15%;
+}
+
+.tdPrincipalMenuGauche
+{
+	vertical-align : top;
+	padding-right  : 25px;
+	padding-left   : 25px;
+	padding-top    : 25px;
+	width          : 10%;
+}
+
+.tdPrincipalContenu
+{
+	padding-left     : 25px;
+	padding-top      : 25px;
+	padding-bottom   : 20px;
+	vertical-align   : top;
+	width            : 85%;
+}
+
+.TableMenuGauche
+{
+	/*width          : 100%;*/
+	border-spacing   : 0px;
+	vertical-align   : center;
+}
+
+.tdMenuTitreGauche
+{
+	background-color : RGB(126,0,0);
+	border           : 1pt solid grey;
+	text-align       : left;
+	padding          : 10px;
+}
+
+.aMenuTitreGauche
+{
+	color			 : RGB(249,147,119);
+	/*Text-Decoration  : none;*/
+}
+
+.tdSousMenuTitreGauche
+{
+	background-color : RGB(255,137,137);
+	border           : 1pt solid grey;
+	text-align       : left;
+	padding          : 3px;
+}
+
+.aSousMenuTitreGauche
+{
+	color			 : black;
+	Text-Decoration  : none;
+}
+
+.tdMenuMenuGauche
+{
+	border-bottom  : 1pt solid grey;
+	border-left    : 1pt solid grey;
+	border-right   : 1pt solid grey;
+	padding        : 3px;
+}
+
+.LienMenuGauche
+{
+	Text-Decoration : none;
+}
+
+.pTitreListe
+{
+	font-size        : 20pt;
+	color : RGB(126,0,0);
+}
+
+.tableEnteteListe
+{
+	width	: 100%;
+}
+
+.tdLienAjouter
+{
+	vertical-align : center;
+}
+
+.tdNbrAff
+{
+	vertical-align 	: center;
+	text-align  	: right;
+}
+
+.tableListe
+{
+	/*border-collapse : collapse;*/
+	/*border          : 1px solid silver;*/
+	border-radius : 10px;
+}
+
+.thListe
+{
+	font-weight  	 : bold;
+	padding      	 : 5px;
+	text-align  	 : Center;
+	Border      	 : 1px solid grey;
+	background-color : silver;
+}
+
+.aThListe
+{
+	Text-Decoration : none;
+	color : black;
+}
+
+.tdListe
+{
+	padding-left	 			: 10px;
+	padding-right	 			: 10px;
+	Border		      			: 1px solid silver;
+	font-size        			: 11pt;
+}
+
+.tdListeVins
+{
+	padding-left	 			: 10px;
+	padding-right	 			: 10px;
+	Border           			: 1px solid black;
+	font-size        			: 11pt;
+	width			 		  	: 20%;
+	border-top-right-radius 	: 10px;
+	border-top-left-radius    	: 10px;
+	border-bottom-right-radius 	: 10px;
+	border-bottom-left-radius  	: 10px;
+}
+
+.tdListeOption
+{
+	padding-left 	 : 10px;
+	padding-right	 : 10px;
+	padding-top		 : 5px;
+	padding-bottom	 : 5px;
+	Border-left      : 1px solid silver;
+	Border-right     : 1px solid silver;
+	Border-bottom    : 1px solid silver;
+}
+
+.aPlusMoins
+{
+	Text-Decoration		: none;
+	font-size			: 15pt;
+	color				: black;
+}
+
+.tdMenuListe
+{
+	vertical-align : top;
+	padding-right  : 40px;
+}
+
+
+.trListePaire
+{
+	/*background-color : RGB(230,230,230);*/
+}
+
+.tdAccueil
+{
+	vertical-align : top;
+	padding        : 25px;
+}
+
+.tableDetailAccueil
+{
+	border        : 1px solid black;
+	border-radius : 10px;
+	padding       : 0px;
+	margin        : 0px;
+	width         : 100%;
+}
+
+.tdTitreDetailAccueil
+{
+	border-bottom              : 1px solid black;
+	background-color		   : RGB(230,230,230);
+	padding-left   			   : 30px;
+	padding-top     		   : 5px;
+	padding-bottom             : 5px;
+	border-top-right-radius    : 10px;
+	border-top-left-radius     : 10px;
+}
+
+.tableFiche
+{
+	/*border-collapse:collapse;*/
+}
+
+.thFicheEnCours
+{
+	border-left	     : 1px solid grey;
+	border-right	 : 1px solid grey;
+	border-top	     : 1px solid grey;
+	text-align       : Center;
+	font-weight      : bold;
+	padding-top      : 7px;
+	padding-bottom   : 7px;
+}
+
+.thFiche1
+{
+	border 		     : 1px solid grey;
+	text-align       : Center;
+	font-weight      : bold;
+	background-color : RGB(190,190,190);
+	padding-top      : 7px;
+	padding-bottom   : 7px;
+}
+
+.tdFiche1
+{
+	border-left	     : 1px solid grey;
+	border-right	 : 1px solid grey;
+	border-bottom    : 1px solid grey;
+	vertical-align   : top;
+	padding          : 20px;
+}
+
+.tdFiche2
+{
+	vertical-align   : top;
+}
+
+.thFiche3
+{
+	border 		     : 1px solid grey;
+	text-align       : Center;
+	font-weight      : bold;
+}
+
+.tdFiche3
+{
+	border 		     : 1px solid grey;
+	border-top       : 0px;
+	vertical-align   : top;
+	padding          : 10px;
+}
+
+.tdSeparationFiche
+{
+	padding-right : 20px;	
+}
+
+.tableDetailFiche
+{
+	border-collapse:collapse;
+}
+
+.thDetailFiche
+{
+	border         : 1px solid grey;
+	font-weight    : bold;
+	padding        : 3px;
+	text-align     : Center;
+}
+
+.tdDetailFiche
+{
+	border         : 1px solid grey;
+	padding        : 3px;
+}
+
+.tdDetailFicheEnCours
+{
+	border           : 1px solid grey;
+	padding          : 3px;
+	background-color : RGB(190,190,190);
+}
+
+.tdPrincipalBoutListVin
+{
+	border-top       : 1px solid silver;
+	border-bottom    : 1px solid silver;
+	padding-top      : 10px;
+	padding-bottom   : 10px;
+	padding-left     : 30px;
+	vertical-align   : top;
+}
+
+
+.tableBoutListVin
+{
+	border		       : 1px solid silver;
+	border-left	       : 0px;
+}
+
+.thBoutListVin
+{
+	border-bottom    : 1px solid silver;
+	border-left      : 1px solid silver;
+	padding          : 3px;
+}
+
+.tdBoutListVin
+{
+	border-left	     : 1px solid silver;
+	padding          : 3px;
+}
+
+.tdStatTable
+{
+
+}
+
+.tdStatHisto1
+{
+	width : 15%;
+}
+
+.tdStatHisto2
+{
+	width : 85%;
+}
+
+.tdTitreCadreFrm
+
+

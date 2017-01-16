@@ -1,0 +1,125 @@
+body
+{
+	background-color : RGB(200,245,245);
+	font-family      : calibri;
+}
+
+.TablePrincipal
+{
+	width          : 100%;
+	border-spacing : 0px;
+}
+
+.TablePrincipalTitre
+{
+	text-align     : Center;
+	font-weight    : bold;
+	font-size      : 20pt;	
+	padding-top    : 10px;
+	padding-bottom : 20px;
+}
+
+.TablePrincipalMenuGauche
+{
+	width          : 150px;
+	border-right   : 1px solid grey;
+	vertical-align : top;
+	padding-right  : 25px;
+}
+
+.TablePrincipalContenu
+{
+	padding-left   : 25px;
+	padding-top    : 50px;
+	vertical-align : top;
+}
+
+.TablePrincipalMenuHaut
+{
+	border           : 1px solid grey;
+	background-color : RGB(150,200,255);
+	padding-left     : 30px;
+	padding-top      : 0px;
+	padding-bottom   : 0px;
+	padding-right    : 0px;
+}
+
+.TableMenuHaut
+{
+	border-spacing   : 0px;
+}
+
+.CelluleMenuHaut
+{
+	padding-top    : 5px;
+	padding-bottom : 5px;
+	padding-left   : 20px;
+	padding-right  : 20px;
+	font-weight    : bold;
+	color          : blue;
+}
+
+.SeparateurMenuHaut
+{
+	background-color : RGB(150,100,255);
+	font-size        : 5pt;
+}
+
+.TableMenuGauche
+{
+	width          : 100%;
+	margin-top     : 25px;
+	border-spacing : 0px;
+}
+
+.TableMenuTitreGauche
+{
+	background-color : RGB(150,200,255);
+	border           : 1pt solid black;
+	text-align       : Center;
+	font-weight      : bold;
+}
+
+.TableMenuMenuGaucheP
+{
+	border-bottom  : 1pt solid black;
+	border-left    : 1pt solid black;
+	border-right   : 1pt solid black;
+	padding        : 3px;
+	background-color : RGB(100,200,250);
+	
+}
+
+.TableMenuMenuGaucheI
+{
+	border-bottom  : 1pt solid black;
+	border-left    : 1pt solid black;
+	border-right   : 1pt solid black;
+	padding        : 3px;
+	background-color : RGB(200,200,250);
+}
+
+.LienMenuGauche
+{
+	Text-Decoration : none;
+}
+
+.TableContenue
+{
+	Border         : 1px solid black;
+	width          : 100%;
+	vertical-align : top;
+
+}
+
+.TitreListe
+{
+	font-weight  : bold;
+	padding      : 3px;
+	text-align   : Center;
+}
+
+.CelluleListe
+{
+	padding      : 3px;
+}

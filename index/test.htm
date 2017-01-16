@@ -1,0 +1,122 @@
+
+<html>
+
+<head>
+	<LINK rel="stylesheet" type="text/css" href="../index/style.css">
+</head>
+
+<body>
+
+	<table cellpadding=0 cellspacing=0 class="tableFiche">
+	
+		<tr><th class="thFiche">Options</th><th>&nbsp;</th><th class="thFiche">Identification</th><th>&nbsp;</th><th class="thFiche">Cépage</th></tr>
+		
+		<tr>
+		
+			<td class="tdFiche">
+				<p><a href="../frm/cepv.frm.php?mode=ajt&ori=vins.fiche&revins='.$vins->Revins().'">Modifier ce vins</a></p>
+				<p><a href="../frm/cepv.frm.php?mode=ajt&ori=vins.fiche&revins='.$vins->Revins().'">Ajouter une bouteille</a></p>
+				<p><a href="../frm/cepv.frm.php?mode=ajt&ori=vins.fiche&revins='.$vins->Revins().'">Entrer des bouteilles</a></p>
+				<p><a href="../frm/cepv.frm.php?mode=ajt&ori=vins.fiche&revins='.$vins->Revins().'">Sortir des bouteilles</a></p>
+				<p><a href="../frm/cepv.frm.php?mode=ajt&ori=vins.fiche&revins='.$vins->Revins().'">Ajouter aux favoris</a></p>
+			</td>
+			
+			<td class="tdSeparationFiche">&nbsp;</td>
+			
+			<td class="tdFiche">
+				<table>
+					<tr><td><b>Référence</b></td><td>1</td></tr>
+					<tr><td><b>Désignation</b></td><td>test vins</td></tr>
+					<tr><td><b>Pays</b></td><td>france</td></tr>
+					<tr><td><b>Région</b></td><td>Alsace</td></tr>
+					<tr><td><b>Appellation</b></td><td>pinot alsace</td></tr>
+					<tr><td><b>Producteur</b></td><td>producteur vins</td></tr>
+					<tr><td><b>Couleur</b></td><td>rouge</td></tr>
+				</table>	
+			</td>
+			
+			<td class="tdSeparationFiche">&nbsp;</td>
+			
+			<td class="tdFiche">
+				<form action="../frm/cepv.frm.php?mode=ajt&ori=vins.fiche&revins='.$vins->Revins().'"  method="post">
+					Quantité<input type="text" name="qtcepv" maxlength="5" />
+					<select id="recepa" name="recepa">
+						<option value=',$uncepa->recepa(),' SELECTED>Syrah</option>
+					</select>
+						<input type="submit" value="Ajouter" name="Valider" />
+				</form>
+				<table cellspacing=0 class="tableDetailFiche">
+					<tr>
+						<th class="thDetailFiche">Cepage</th>
+						<th class="thDetailFiche">Quantité</th>
+						<th class="thDetailFiche">Option</th>
+					</tr>
+					<tr>
+						<td class="tdDetailFiche">1 </td>
+						<td class="tdDetailFiche">syrah</td>
+						<td class="tdDetailFiche"><a href="../gest/cepv.gest.php?mode=del&ori=vins.fiche&revins='.$vins->Revins().'&recepa='.$uncepv->Recepa().'">Supprimer</a></td>
+					</tr>
+				</table>
+			</td>
+
+		</tr>
+	
+		<tr><td colspan=5>&nbsp;</td></tr>
+	
+		<tr><th colspan=3 class="thFiche">Bouteilles</th><th>&nbsp;</th><th class="thFiche">Mouvements de stock</th></tr>
+		
+		<tr>
+			<td class="tdFiche" colspan=3>
+				<table cellspacing=0 class="tableDetailFiche">
+					<tr>
+						<th class="thDetailFiche">Gabarit</th>
+						<th class="thDetailFiche">Milésime</th>
+						<th class="thDetailFiche">Apogé</th>
+						<th class="thDetailFiche">A boire avant</th>
+						<th class="thDetailFiche">Note (/20)</th>
+					</tr>
+					<tr>
+						<td class="tdDetailFiche">bouteille</td>
+						<td class="tdDetailFiche">2014</td>
+						<td class="tdDetailFiche">2015</td>
+						<td class="tdDetailFiche">2016</td>
+						<td class="tdDetailFiche">18</td>
+					</tr>
+				</table>
+			</td>
+
+			
+			<td class="tdSeparationFiche">&nbsp;</td>
+			
+			<td class="tdFiche">
+
+
+				<table cellspacing=0 class="tableDetailFiche">
+					<tr>
+						<th class="thDetailFiche">Gabarit</th>
+						<th class="thDetailFiche">Milésime</th>
+						<th class="thDetailFiche">Date</th>
+						<th class="thDetailFiche">Quantité</th>
+						<th class="thDetailFiche">Sens</th>
+						<th class="thDetailFiche">Fournisseur</th>
+						<th class="thDetailFiche">Appréciation</th>
+					</tr>
+					<tr>
+						<td class="tdDetailFiche">bouteille</td>
+						<td class="tdDetailFiche">2015</td>
+						<td class="tdDetailFiche">2016</td>
+						<td class="tdDetailFiche">10</td>
+						<td class="tdDetailFiche">Entrée</td>
+						<td class="tdDetailFiche">mon four</td>
+						<td class="tdDetailFiche">super bon</td>
+					</tr>
+				</table>
+	
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
+
