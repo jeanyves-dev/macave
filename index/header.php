@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
 	<LINK rel="stylesheet" type="text/css" href="../index/style.css">
@@ -31,7 +31,7 @@
 		<td class="tdPrincipalHaut" colspan=2>
 			<table class="tableEntete">
 				<tr>
-					<td class="tdPrincipalTitre">Ma cave � vin</td>
+					<td class="tdPrincipalTitre">Ma cave à vin</td>
 					<td class="tdBanniere"><img class="banner" src="../img/banniere.png"></td>
 					<td class="tdAdmin">&nbsp;</td>
 				</tr>
