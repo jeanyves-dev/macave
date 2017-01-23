@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 echo '<table class="tableDetailAccueil" cellspacing=0>';
 echo '<tr><td class="tdTitreDetailAccueil">Options</td></tr>';

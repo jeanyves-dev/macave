@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -16,8 +16,8 @@ echo '<p><a href="../frm/casi.frm.php?recasi=0">Ajouter un casier</a></p>';
 
 echo '<table border = 1>';
 echo '<tr>';
-echo '<td class="TitreListe">Référence</td>';
-echo '<td class="TitreListe">Désignation</td>';
+echo '<td class="TitreListe">RÃ©fÃ©rence</td>';
+echo '<td class="TitreListe">DÃ©signation</td>';
 echo '<td class="TitreListe">colonne</td>';
 echo '<td class="TitreListe">Nbr ligne</td>';
 echo '<td class="TitreListe">Nbr colonne</td>';
@@ -45,6 +45,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

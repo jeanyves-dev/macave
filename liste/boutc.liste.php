@@ -65,6 +65,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

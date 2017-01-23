@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -29,7 +29,7 @@ if (isset($_GET["rebout"]) AND $_GET["rebout"] <> 0)
 
 IF (isset($_GET["retari"]) AND $_GET["retari"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="retari" maxlength="50" value="'.$tari->retari().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="retari" maxlength="50" value="'.$tari->retari().'" /></td></tr>';
 	echo '<tr><td>Bouteille : </td><td><input type="text" name="rebout" maxlength="50" value='.$rebout.' /></td></tr>';
 	echo '<tr><td>Date : </td><td><input type="date" name="datari" maxlength="50" value='.$tari->datar2().' /></td></tr>';
 	echo '<tr><td>Montant : </td><td><input type="text" name="mtbout" maxlength="50" value="'.$tari->mtbout().'" /></td></tr>';
@@ -61,6 +61,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

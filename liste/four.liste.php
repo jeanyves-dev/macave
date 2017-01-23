@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -16,13 +16,13 @@ echo '<p><a href="../frm/four.frm.php?refour=0">Ajouter un fournisseur</a></p>';
 
 echo '<table border = 1>';
 echo '<tr>';
-echo '<td class="TitreListe">Référence</td>';
-echo '<td class="TitreListe">Désignation</td>';
+echo '<td class="TitreListe">RÃ©fÃ©rence</td>';
+echo '<td class="TitreListe">DÃ©signation</td>';
 echo '<td class="TitreListe">Adresse 1</td>';
 echo '<td class="TitreListe">Adresse 2</td>';
 echo '<td class="TitreListe">Code postal</td>';
 echo '<td class="TitreListe">Ville</td>';
-echo '<td class="TitreListe">Téléphone</td>';
+echo '<td class="TitreListe">TÃ©lÃ©phone</td>';
 echo '<td class="TitreListe">Fax</td>';
 echo '<td class="TitreListe">Mail</td>';
 echo '<td class="TitreListe">Site web</td>';

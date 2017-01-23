@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -30,7 +30,7 @@ echo '<table>';
 
 if ($_GET["remven"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="remven" maxlength="50" value="'.$mven->remven().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="remven" maxlength="50" value="'.$mven->remven().'" /></td></tr>';
 	echo '<tr><td>Date : </td><td><input type="date" name="damven" maxlength="50" value='.$mven->damve2().' /></td></tr>';
 	
 	echo "<tr><td>Canal d'achat : </td><td><select id='canapp' name='canapp'>";
@@ -78,6 +78,6 @@ echo '</table>';
 echo '</form>';
 
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

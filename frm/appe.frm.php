@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -25,10 +25,10 @@ echo '<table>';
 
 if ($_GET["reappe"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="reappe" maxlength="50" value="'.$appe->reappe().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="reappe" maxlength="50" value="'.$appe->reappe().'" /></td></tr>';
 	echo '<tr><td>Nom : </td><td><input type="text" name="deappe" maxlength="50" value="'.$appe->Deappe().'" /></td></tr>';
 	
-	echo '<tr><td>Région : </td><td><select id="reregi" name="reregi">';
+	echo '<tr><td>RÃ©gion : </td><td><select id="reregi" name="reregi">';
 	
 	foreach ($mesregi as $unregi)
 	{
@@ -46,7 +46,7 @@ if ($_GET["reappe"] <> 0)
 else
 {
 	echo '<tr><td>Nom : </td><td><input type="text" name="deappe" maxlength="50" /></td></tr>';
-	echo '<tr><td>Région : </td><td><select id="reregi" name="reregi">';
+	echo '<tr><td>RÃ©gion : </td><td><select id="reregi" name="reregi">';
 	foreach ($mesregi as $unregi)
 	{
 		echo '<option value=',$unregi->reregi(),'>',$unregi->deregi(),'</option>';		
@@ -58,6 +58,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

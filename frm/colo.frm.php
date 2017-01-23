@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -25,7 +25,7 @@ echo '<table>';
 
 IF ($_GET["recolo"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="recolo" maxlength="50" value="'.$colo->recolo().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="recolo" maxlength="50" value="'.$colo->recolo().'" /></td></tr>';
 	echo '<tr><td>Nom : </td><td><input type="text" name="decolo" maxlength="50" value="'.$colo->Decolo().'" /></td></tr>';
 	
 	echo '<tr><td>empl : </td><td><select id="reempl" name="reempl">';
@@ -58,6 +58,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

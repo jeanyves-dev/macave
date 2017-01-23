@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -45,7 +45,7 @@ foreach ($mestbse as $untbse)
 echo '</select></td></tr>';
 
 
-echo '<tr><td>Référence : </td><td><input type="text" name="retbsd" maxlength="50" value="'.$retbsd.'" /></td></tr>';
+echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="retbsd" maxlength="50" value="'.$retbsd.'" /></td></tr>';
 echo '<tr><td>Designation : </td><td><input type="text" name="detbsd" maxlength="50" value="'.$detbsd.'" /></td></tr>';
 
 echo '<tr><td>&nbsp;</td><td><input type="submit" value="Valider" name="Valider" /></td></tr>';
@@ -53,7 +53,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -24,7 +24,7 @@ echo '<table>';
 echo '<tr style="vertical-align : top;">';
 echo '<td>';
 
-echo '<p><a href="../frm/mven.frm.php?remven=0">Ajouter une entrée</a></p>';
+echo '<p><a href="../frm/mven.frm.php?remven=0">Ajouter une entrÃ©e</a></p>';
 echo '<table cellspacing=0 class="tableListe">';
 echo '<tr><td class="thListe">Date</td><td class="thListe">Fournisseur</td><td class="thListe">Notes</td><td class="thListe">Canal achat</td><td colspan=3 class="thListe">Options</td></tr>';
 
@@ -67,7 +67,7 @@ if ($_GET["remven"] <> 0)
 	$mesmvel = $mvel_dao->getListMven($_GET["remven"]);
 
 	echo '<table cellspacing=0 class="tableListe">';
-	echo '<tr><td class="thListe">Bouteille</td><td class="thListe">Quantité</td><td class="thListe">Notes</td><td colspan=2 class="thListe">Options</td></tr>';
+	echo '<tr><td class="thListe">Bouteille</td><td class="thListe">QuantitÃ©</td><td class="thListe">Notes</td><td colspan=2 class="thListe">Options</td></tr>';
 
 	if (empty($mesmvel))
 	{
@@ -100,6 +100,6 @@ echo '</table>';
 
 
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

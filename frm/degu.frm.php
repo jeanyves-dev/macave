@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -20,7 +20,7 @@ echo '<table>';
 
 if ($_GET["redegu"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="redegu" maxlength="50" value="'.$degu->redegu().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="redegu" maxlength="50" value="'.$degu->redegu().'" /></td></tr>';
 	echo '<tr><td>Date : </td><td><input type="date" name="dadegu" maxlength="50" value="'.$degu->dadeg2().'" /></td></tr>';
 	echo '<tr><td>note : </td><td><input type="text" name="nodegu" maxlength="200" value="'.$degu->nodegu().'" /></td></tr>';
 }
@@ -35,6 +35,6 @@ echo '</table>';
 echo '</form>';
 
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

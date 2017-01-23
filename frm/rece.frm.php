@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -40,7 +40,7 @@ if ($_GET["rerece"] <> 0)
 	$replat = $rece->Replat();
 	$rerect = $rece->Rerect();
 	
-	echo '<tr><td>Référence : </td><td><input type="text" name="rerece" maxlength="50" value="'.$rece->rerece().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="rerece" maxlength="50" value="'.$rece->rerece().'" /></td></tr>';
 }
 
 echo '<tr><td>Nom : </td><td><input type="text" name="derece" maxlength="50" value="'.$derece.'" /></td></tr>';
@@ -70,6 +70,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -55,7 +55,7 @@ echo '<form action="../gest/vins.gest.php" method="post">';
 
 echo '<table border=1>';
 
-echo '<tr><td class="tdTitreCadreFrm">Identification</td><td class="tdTitreCadreFrm">Situation géographique</td></tr>';
+echo '<tr><td class="tdTitreCadreFrm">Identification</td><td class="tdTitreCadreFrm">Situation gÃ©ographique</td></tr>';
 
 echo '<tr><td>';
 
@@ -79,17 +79,17 @@ IF ($_GET["revins"] <> 0)
 	$reclas = $vins->Reclas();
 	$favori = $vins->Favori();
 	
-	echo '<tr><td>Référence : </td><td><input type="text" name="revins" maxlength="50" value="'.$vins->revins().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="revins" maxlength="50" value="'.$vins->revins().'" /></td></tr>';
 }
 echo '<tr><td>Nom : </td><td><input type="text" name="devins" value="'.$devins.'" maxlength="50" /></td></tr>';
-echo '<tr><td>Cuvée : </td><td><input type="text" name="cuvins" value="'.$cuvins.'" maxlength="50" /></td></tr>';
-echo '<tr><td>Autres libellé : </td><td><input type="text" name="devinb" value="'.$devinb.'" maxlength="50" /></td></tr>';
+echo '<tr><td>CuvÃ©e : </td><td><input type="text" name="cuvins" value="'.$cuvins.'" maxlength="50" /></td></tr>';
+echo '<tr><td>Autres libellÃ© </td><td><input type="text" name="devinb" value="'.$devinb.'" maxlength="50" /></td></tr>';
 echo '</table>';
 /* Fin identification */
 
 echo '</td><td>';
 
-/* Zone géographique */
+/* Zone gÃ©ographique */
 echo '<table>';
 echo '<tr><td>Pays</td><td><select id="repays"  name="repays" STYLE="width:100%">';
 foreach ($mespays as $unpays)
@@ -101,7 +101,7 @@ foreach ($mespays as $unpays)
 }
 echo '</select></td><td><input type="text" name="depays" maxlength="50" /></td></tr>';
 
-echo '<tr><td>Région</td><td><select id="reregi" name="reregi" STYLE="width:100%">';
+echo '<tr><td>RÃ©gion</td><td><select id="reregi" name="reregi" STYLE="width:100%">';
 foreach ($mespays as $unpays)
 {	
 	{echo '<option value=0>---',$unpays->depays(),'---</option>';}
@@ -136,7 +136,7 @@ foreach ($mespays as $unpays)
 }
 echo '</select></td><td><input type="text" name="deappe" maxlength="50" /></td></tr>';
 echo '</table>';
-/* Fin zone géographique */
+/* Fin zone gÃ©ographique */
 
 echo '</td></tr>';
 
@@ -207,7 +207,7 @@ IF ($_GET["revins"] == 0)
 {
 	$tbsd_dao = new tbsd_dao($db);
 	$mestbsd = $tbsd_dao->getList("typrop");
-	echo "<tr><td>Propriété : </td><td><select id='typrop' name='typrop'>";
+	echo "<tr><td>PropriÃ©tÃ© : </td><td><select id='typrop' name='typrop'>";
 	foreach ($mestbsd as $untbsd)
 		{echo '<option value=',$untbsd->retbsd(),'>',$untbsd->detbsd(),'</option>';}
 	echo '</select></td></tr>';
@@ -245,11 +245,11 @@ IF ($_GET["revins"] == 0)
 		echo '<option value=',$ungaba->regaba(),'>',$ungaba->degaba(),'</option>';
 	}
 	echo '</select></td></tr>';
-	echo '<tr><td>Millésime : </td><td><input type="text" name="anmile" value=0 maxlength="10" /></td></tr>';
-	echo '<tr><td>Apogé : </td><td><input type="text" name="anapog" value=0 maxlength="10" /></td></tr>';
+	echo '<tr><td>MillÃ©sime : </td><td><input type="text" name="anmile" value=0 maxlength="10" /></td></tr>';
+	echo '<tr><td>ApogÃ© </td><td><input type="text" name="anapog" value=0 maxlength="10" /></td></tr>';
 	echo '<tr><td>A boire avant : </td><td><input type="text" name="anaboi" value=0 maxlength="10" /></td></tr>';
 	echo '<tr><td>Note (/20) : </td><td><input type="text" name="bonote" value=0 maxlength="10" /></td></tr>';
-	echo '<tr><td>Degrès alcool : </td><td><input type="text" name="degres" value=0 maxlength="10" /></td></tr>';
+	echo '<tr><td>DegrÃ©s alcool : </td><td><input type="text" name="degres" value=0 maxlength="10" /></td></tr>';
 	echo '</table>';
 }
 

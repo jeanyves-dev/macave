@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 /* Inventaire des bouteilles */
 
@@ -20,16 +20,16 @@ require '../index/conn_db.php';
 $vins_dao = new vins_dao($db);
 $bout_dao = new bout_dao($db);
 
-$mesvins = $vins_dao->getList("revins","ASC");
+$mesvins = $vins_dao->getList("revins","ASC",0,0);
 
 echo '<table cellspacing=0 class="tableListe" id="tableListe">';
 echo '<thead>';
 echo '<tr>';
-echo '<th class="thListe">Référence</th>';
-echo '<th class="thListe">Désignation</th>';
+echo '<th class="thListe">RÃ©fÃ©rence</th>';
+echo '<th class="thListe">DÃ©signation</th>';
 echo '<th class="thListe">Couleur</th>';
-echo '<th class="thListe">Millésime</th>';
-echo '<th class="thListe">Entrées</th>';
+echo '<th class="thListe">MillÃ©sime</th>';
+echo '<th class="thListe">EntrÃ©es</th>';
 echo '<th class="thListe">Sorties</th>';
 echo '<th class="thListe">Stock</td>';
 echo '</tr>';
@@ -67,6 +67,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

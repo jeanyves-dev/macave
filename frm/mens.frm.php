@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -25,7 +25,7 @@ echo '<table>';
 
 if ($_GET["remens"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="remens" maxlength="50" value="'.$mens->remens().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="remens" maxlength="50" value="'.$mens->remens().'" /></td></tr>';
 	echo '<tr><td>Nom : </td><td><input type="text" name="demens" maxlength="50" value="'.$mens->Demens().'" /></td></tr>';
 	echo '<tr><td>Lien : </td><td><input type="text" name="limenu" maxlength="50" value="'.$mens->Limenu().'" /></td></tr>';
 	echo '<tr><td>Rang : </td><td><input type="text" name="norang" maxlength="50" value="'.$mens->Norang().'" /></td></tr>';
@@ -63,6 +63,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

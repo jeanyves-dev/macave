@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 require '../index/header.php';
 
@@ -29,7 +29,7 @@ echo '<form action="../gest/cepv.gest.php?ori='.$_GET["ori"].'&mode='.$_GET["mod
 
 echo '<table>';
 echo '<tr>';
-echo '<td>C�page</td>';
+echo '<td>Cépage</td>';
 echo '<td>';
 echo '<select id="recepa" name="recepa">';
 foreach ($mescepa as $uncepa)
@@ -48,7 +48,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

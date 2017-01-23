@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -42,10 +42,10 @@ else
 	$mestbsd = $tbsd_dao->getListEntiere();
 }
 
-echo '<p><a href="../frm/tbsd.frm.php?mode=add&codtab='.$codtab.'">Ajouter un entrée dans une tabelle</a></p>';
+echo '<p><a href="../frm/tbsd.frm.php?mode=add&codtab='.$codtab.'">Ajouter un entrÃ©e dans une tabelle</a></p>';
 
 echo '<table border = 1>';
-echo '<tr><td class="TitreListe">Référence</td><td class="TitreListe">Code tabelle</td><td class="TitreListe">Désignation</td><td colspan=2 class="TitreListe">Options</td></tr>';
+echo '<tr><td class="TitreListe">RÃ©fÃ©rence</td><td class="TitreListe">Code tabelle</td><td class="TitreListe">DÃ©signation</td><td colspan=2 class="TitreListe">Options</td></tr>';
 
 if (empty($mestbsd))
 {
@@ -66,6 +66,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

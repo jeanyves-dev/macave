@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 /* Stat par classement */
 
@@ -24,7 +24,7 @@ echo '<p><a href="stat10.php?tystat=1">Table</a> - <a href="stat10.php?tystat=2"
 IF (isset($_GET["tystat"]) AND $_GET["tystat"] == "1")
 {
 	echo '<table border = 1>';
-	echo '<tr><td class="TitreListe">Désignation</td><td class="TitreListe">Quantité</td></tr>';
+	echo '<tr><td class="TitreListe">DÃ©signation</td><td class="TitreListe">QuantitÃ©</td></tr>';
 	foreach ($mesclas as $unclas)
 	{
 		$res = $stat_dao->getStat10($unclas->Reclas());
@@ -43,7 +43,7 @@ IF (isset($_GET["tystat"]) AND $_GET["tystat"] == "2")
 	$StockTotal = $mvel_dao->getEntrTotal() - $mvsl_dao->getSortTotal();
 
 	echo '<table border = 1 width=100%>';
-	echo '<tr><td class="TitreListe">Désignation</td><td class="TitreListe">Quantité</td></tr>';
+	echo '<tr><td class="TitreListe">DÃ©signation</td><td class="TitreListe">QuantitÃ©</td></tr>';
 	foreach ($mesclas as $unclas)
 	{
 		$nbr = $stat_dao->getStat10($unclas->Reclas());
@@ -56,6 +56,6 @@ IF (isset($_GET["tystat"]) AND $_GET["tystat"] == "2")
 	echo '</table>';
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

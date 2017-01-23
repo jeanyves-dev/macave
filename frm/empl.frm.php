@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -18,7 +18,7 @@ echo '<form action="../gest/empl.gest.php"  method="post">';
 echo '<table>';
 if ($_GET["reempl"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="reempl" maxlength="50" value="'.$empl->reempl().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="reempl" maxlength="50" value="'.$empl->reempl().'" /></td></tr>';
 	echo '<tr><td>Nom : </td><td><input type="text" name="deempl" maxlength="50" value="'.$empl->Deempl().'" /></td></tr>';
 }
 else
@@ -30,7 +30,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

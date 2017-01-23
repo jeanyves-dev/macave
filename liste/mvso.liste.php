@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -26,7 +26,7 @@ echo '<td>';
 
 echo '<p><a href="../frm/mvso.frm.php?remvso=0">Ajouter une sortie</a></p>';
 echo '<table cellspacing=0 class="tableListe">';
-echo '<tr><th class="thListe">Référence</th><th class="thListe">Date</th><th class="thListe">Notes</th><th colspan=3 class="thListe">Options</th></tr>';
+echo '<tr><th class="thListe">RÃ©fÃ©rence</th><th class="thListe">Date</th><th class="thListe">Notes</th><th colspan=3 class="thListe">Options</th></tr>';
 if (empty($mesmvso))
 {
   echo 'pas de sortie !';
@@ -62,7 +62,7 @@ if ($_GET["remvso"] <> 0)
 	$mvsl_dao = new mvsl_dao($db);
 	$mesmvsl = $mvsl_dao->getListmvso($_GET["remvso"]);
 	echo '<table cellspacing=0 class="tableListe">';
-	echo '<tr><th class="thListe">Référence</th><th class="thListe">Bouteille</th><th class="thListe">Désignation</th><th class="thListe">Quantité</th><th class="thListe">Appréciation</th><th colspan=2 class="thListe">Options</th></tr>';
+	echo '<tr><th class="thListe">RÃ©fÃ©rence</th><th class="thListe">Bouteille</th><th class="thListe">DÃ©signation</th><th class="thListe">QuantitÃ©</th><th class="thListe">ApprÃ©ciation</th><th colspan=2 class="thListe">Options</th></tr>';
 	if (empty($mesmvsl))
 	{
 	  echo 'pas de bouteille !';
@@ -96,6 +96,6 @@ echo '</table>';
 
 
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

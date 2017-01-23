@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -44,7 +44,7 @@ if (isset($_GET["redegl"]) AND $_GET["redegl"] <> 0)
 	$bouche = $degl->bouche();
 	$codegl = $degl->codegl();
 
-	echo '<tr><td>Référence : </td><td><input type="text" name="redegl" maxlength="50" value="'.$redegl.'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="redegl" maxlength="50" value="'.$redegl.'" /></td></tr>';
 	
 }
 
@@ -63,6 +63,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

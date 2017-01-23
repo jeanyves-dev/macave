@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -23,7 +23,7 @@ echo '<form action="../gest/menu.gest.php"  method="post">';
 
 echo '<table>';
 if ($_GET["remenu"] <> 0)
-	{echo '<tr><td>Référence : </td><td><input type="text" name="remenu" maxlength="50" value="'.$menu->remenu().'" /></td></tr>';}
+	{echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="remenu" maxlength="50" value="'.$menu->remenu().'" /></td></tr>';}
 
 echo '<tr><td>Nom : </td><td><input type="text" name="demenu" maxlength="50" value="'.$demenu.'" /></td></tr>';
 echo '<tr><td>Lien : </td><td><input type="text" name="limenu" maxlength="50" value="'.$limenu.'" /></td></tr>';
@@ -34,7 +34,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

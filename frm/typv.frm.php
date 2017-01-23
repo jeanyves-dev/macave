@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -20,7 +20,7 @@ echo '<form action="../gest/typv.gest.php"  method="post">';
 
 echo '<table>';
 if ($_GET["retypv"] <> 0)
-	{echo '<tr><td>Référence : </td><td><input type="text" name="retypv" maxlength="50" value="'.$typv->retypv().'" /></td></tr>';}
+	{echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="retypv" maxlength="50" value="'.$typv->retypv().'" /></td></tr>';}
 
 echo '<tr><td>Nom : </td><td><input type="text" name="detypv" maxlength="50" value="'.$detypv.'" /></td></tr>';
 
@@ -29,7 +29,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

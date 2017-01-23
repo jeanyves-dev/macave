@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 	require '../index/header.php';
 ?>
@@ -8,11 +8,11 @@
 		<tr>
 			<td>
 				<table>
-					<tr><td>Statistique zone géographique</td></tr>
+					<tr><td>Statistique zone gÃ©ographique</td></tr>
 					<tr><td class="tdAccueil">
 						<p>
 							<a href='stat01.php?tystat=1'>Vin par pays</a><br>
-							<a href='stat02.php?tystat=1'>Vin par région</a><br>
+							<a href='stat02.php?tystat=1'>Vin par rÃ©gion</a><br>
 							<a href='stat03.php?tystat=1'>Vin par appellation</a>
 						</p>	
 					</td></tr>
@@ -26,8 +26,8 @@
 					<tr><td>Statistique stock</td></tr>
 					<tr><td class="tdAccueil">
 						<p>
-							<a href='stat04.php?tystat=1'>Entrée par année</a><br>
-							<a href='stat05.php?tystat=1'>Sortie par année</a><br>
+							<a href='stat04.php?tystat=1'>EntrÃ©e par annÃ©e</a><br>
+							<a href='stat05.php?tystat=1'>Sortie par annÃ©e</a><br>
 							<a href='stat11.php?tystat=1'>Bouteille par canal appro</a><br>
 						</p>	
 					</td></tr>
@@ -45,8 +45,8 @@
 					<tr><td>Statistique bouteille</td></tr>
 					<tr><td class="tdAccueil">
 						<p>
-							<a href='stat06.php?tystat=1'>Bouteille par milésime</a><br>
-							<a href='stat07.php?tystat=1'>Entrée par année</a><br>
+							<a href='stat06.php?tystat=1'>Bouteille par milÃ©sime</a><br>
+							<a href='stat07.php?tystat=1'>EntrÃ©e par annÃ©e</a><br>
 						</p>	
 					</td></tr>
 				</table>
@@ -73,7 +73,7 @@
 	</table>
 
 <?php
-	require '../index/Footer.php';
+	require '../index/footer.php';
 ?>
 
 

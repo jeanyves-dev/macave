@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -22,7 +22,7 @@ echo '<form action="../gest/tbse.gest.php"  method="post">';
 echo '<table>';
 
 if (isset($_GET["retbse"]) AND $_GET["retbse"] <> 0)
-	{echo '<tr><td>Référence : </td><td><input type="text" name="retbse" maxlength="50" value="'.$tbse->Retbse().'" /></td></tr>';}
+	{echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="retbse" maxlength="50" value="'.$tbse->Retbse().'" /></td></tr>';}
 
 echo '<tr><td>Code : </td><td><input type="text" name="codtab" maxlength="50" value="'.$codtab.'" /></td></tr>';
 echo '<tr><td>Designation : </td><td><input type="text" name="detbse" maxlength="50" value="'.$detbse.'" /></td></tr>';
@@ -32,7 +32,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

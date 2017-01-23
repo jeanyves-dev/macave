@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -41,10 +41,10 @@ echo '<tr>';
 echo '<td>Recherche une bouteille : </td>';
 echo '<td>';
 echo '<select id="tyrech" name="tyrech">';
-echo '<option value="devins">Désignation</option>';
-echo '<option value="anmile">Milésime</option>';
+echo '<option value="devins">DÃ©signation</option>';
+echo '<option value="anmile">MilÃ©sime</option>';
 echo '<option value="depays">Pays</option>';
-echo '<option value="deregi">Région</option>';
+echo '<option value="deregi">RÃ©gion</option>';
 echo '<option value="deappe">Appelation</option>';
 echo '<option value="decoul">Couleur</option>';
 echo '</select>';
@@ -66,7 +66,7 @@ else
 	$mesbout = $bout_dao->getList();
 }
 
-echo '<p>Résultat de la recherche : </p>';
+echo '<p>RÃ©sultat de la recherche : </p>';
 echo '<form action="../frm/mvsl_2.frm.php?remvso='.$_GET["remvso"].'" method="post">';
 echo '<input type="submit" value="Valider" name="Valider" />';
 echo '<table cellspacing=0 class="tableListe">';
@@ -74,16 +74,16 @@ echo '<tr>';
 echo '<th class="thListe"></th>';
 echo '<th class="thListe">No</a></th>';
 echo '<th class="thListe">Stock</a></th>';
-echo '<th class="thListe">Désignation</a></th>';
-echo '<th class="thListe">Millésime</a></th>';
+echo '<th class="thListe">DÃ©signation</a></th>';
+echo '<th class="thListe">MillÃ©sime</a></th>';
 echo '<th class="thListe">Pays</a></th>';
-echo '<th class="thListe">Région</a></th>';
+echo '<th class="thListe">RÃ©gion</a></th>';
 echo '<th class="thListe">Appellation</a></th>';
 echo '<th class="thListe">Couleur</a></th>';
 echo '</tr>';
 
 if (empty($mesbout))
-{ echo 'pas de vins trouvé !';}
+{ echo 'pas de vins trouvÃ© !';}
 else
 {
 	foreach ($mesbout as $unbout)
@@ -111,6 +111,6 @@ else
 echo '</table>';
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

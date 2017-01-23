@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -15,7 +15,7 @@ $mespays = $pays_dao->getList();
 echo '<p><a href="../frm/pays.frm.php?repays=0">Ajouter un pays</a></p>';
 
 echo '<table border = 1>';
-echo '<tr><td class="TitreListe">Référence</td><td class="TitreListe">Désignation</td><td colspan=2 class="TitreListe">Options</td></tr>';
+echo '<tr><td class="TitreListe">RÃ©fÃ©rence</td><td class="TitreListe">DÃ©signation</td><td colspan=2 class="TitreListe">Options</td></tr>';
 
 if (empty($mespays))
 {
@@ -36,6 +36,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -38,7 +38,7 @@ if ($_GET["reacco"] <> 0)
 	$revins = $acco->Revins();
 	$replat = $acco->Replat();
 	
-	echo '<tr><td>Référence : </td><td><input type="text" name="reacco" maxlength="50" value="'.$acco->reacco().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="reacco" maxlength="50" value="'.$acco->reacco().'" /></td></tr>';
 }
 
 echo '<tr><td>Vins : </td><td><select id="revins" name="revins">';
@@ -66,6 +66,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

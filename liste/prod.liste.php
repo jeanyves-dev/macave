@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -16,9 +16,9 @@ echo '<p><a href="../frm/prod.frm.php?reprod=0">Ajouter un producteur</a></p>';
 
 echo '<table border = 1>';
 echo '<tr>';
-echo '<td class="TitreListe">Référence</td>';
-echo '<td class="TitreListe">Propriété</td>';
-echo '<td class="TitreListe">Désignation</td>';
+echo '<td class="TitreListe">RÃ©fÃ©rence</td>';
+echo '<td class="TitreListe">PropriÃ©tÃ©</td>';
+echo '<td class="TitreListe">DÃ©signation</td>';
 echo '<td class="TitreListe">Adresse 1</td>';
 echo '<td class="TitreListe">Adresse 2</td>';
 echo '<td class="TitreListe">Code postal</td>';

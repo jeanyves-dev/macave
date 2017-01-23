@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -8,7 +8,7 @@ $mesmenu = $menu_dao->getList();
 echo '<p><a href="../frm/menu.frm.php?remenu=0">Ajouter un menu</a></p>';
 
 echo '<table border = 1>';
-echo '<tr><td class="TitreListe">Référence</td><td class="TitreListe">Désignation</td><td class="TitreListe">Lien</td><td class="TitreListe">Rang</td><td colspan=2 class="TitreListe">Options</td></tr>';
+echo '<tr><td class="TitreListe">RÃ©fÃ©rence</td><td class="TitreListe">DÃ©signation</td><td class="TitreListe">Lien</td><td class="TitreListe">Rang</td><td colspan=2 class="TitreListe">Options</td></tr>';
 
 if (empty($mesmenu))
 {
@@ -30,6 +30,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

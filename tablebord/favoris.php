@@ -1,10 +1,10 @@
-<?php
+ï»¿<?php
 
-// Récupération de la liste
+// RÃ©cupÃ©ration de la liste
 $vins_dao = new vins_dao($db);
 $mesvins = $vins_dao->getListFavori();
 
-/* Entête du tableau */
+/* EntÃ¨te du tableau */
 echo '<table class="tableDetailAccueil" cellspacing=0>';
 echo '<tr><td class="tdTitreDetailAccueil" colspan=5>Mes vins favoris (5)</td></tr>';
 echo '<tr>';
@@ -12,9 +12,9 @@ echo '<td>';
 
 echo '<table>';
 echo '<tr>';
-echo '<td>Désignation</td>';
+echo '<td>DÃ©signation</td>';
 echo '<td>Pays</td>';
-echo '<td>Région</td>';
+echo '<td>RÃ©on</td>';
 echo '<td>Appellation</td>';
 echo '<td>Couleur</td>';
 echo '</tr>';

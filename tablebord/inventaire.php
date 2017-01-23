@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	
 	
 	$mvel_dao = new mvel_dao($db);
@@ -19,7 +19,7 @@
 	echo '</tr>';
 	
 	echo '<tr>';
-	echo '<td colspan=2>R�partition</td>';
+	echo '<td colspan=2>Répartition</td>';
 	echo '</tr>';
 	$mescoul = $coul_dao->getList();
 	

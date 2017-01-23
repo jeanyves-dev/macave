@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -25,7 +25,7 @@ IF ($_GET["recoul"] <> 0)
 	$decoul = $coul->decoul();
 	$cocoul = $coul->cocoul();
 	
-	echo '<tr><td>Référence : </td><td><input type="text" name="recoul" maxlength="50" value="'.$coul->recoul().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="recoul" maxlength="50" value="'.$coul->recoul().'" /></td></tr>';
 }
 
 echo '<tr><td>Nom : </td><td><input type="text" name="decoul" value="'.$decoul.'" maxlength="50" /></td></tr>';
@@ -36,6 +36,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -13,7 +13,7 @@ $mesgaba = $gaba_dao->getList();
 echo '<p><a href="../frm/gaba.frm.php?regaba=0">Ajouter un gaba</a></p>';
 
 echo '<table border = 1>';
-echo '<tr><td class="TitreListe">Référence</td><td class="TitreListe">Désignation</td><td class="TitreListe">Contenance</td><td colspan=2 class="TitreListe">Options</td></tr>';
+echo '<tr><td class="TitreListe">RÃ©fÃ©rence</td><td class="TitreListe">DÃ©signation</td><td class="TitreListe">Contenance</td><td colspan=2 class="TitreListe">Options</td></tr>';
 
 if (empty($mesgaba))
 {
@@ -35,6 +35,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

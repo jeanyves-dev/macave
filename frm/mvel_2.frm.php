@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -39,7 +39,7 @@ if (isset($_GET["remvel"]) AND $_GET["remvel"] <> 0)
 	$rebout = $mvel->rebout();
 	$nomvel = $mvel->nomvel();
 	$qtmvel = $mvel->qtmvel();
-	echo '<tr><td>Référence : </td><td><input type="text" name="remvel" maxlength="50" value="'.$remvel.'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="remvel" maxlength="50" value="'.$remvel.'" /></td></tr>';
 	$mtbout = "";
 }
 else
@@ -53,7 +53,7 @@ echo '<td><input type="text" name="rebout" maxlength="50" value="'.$rebout.'" />
 echo '</tr>';
 
 echo '<tr><td>Note : </td><td><input type="text" name="nomvel" maxlength="50" value="'.$nomvel.'" /></td></tr>';
-echo '<tr><td>Quantité : </td><td><input type="text" name="qtmvel" maxlength="50" value="'.$qtmvel.'" /></td></tr>';
+echo '<tr><td>QuantitÃ© : </td><td><input type="text" name="qtmvel" maxlength="50" value="'.$qtmvel.'" /></td></tr>';
 echo $mtbout;
 echo '<tr><td>&nbsp;</td><td><input type="submit" value="Valider" name="Valider" /></td></tr>';
 
@@ -61,6 +61,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

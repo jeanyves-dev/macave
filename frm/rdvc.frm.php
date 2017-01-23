@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -18,7 +18,7 @@ echo '<form action="../gest/rdvc.gest.php"  method="post">';
 echo '<table>';
 if ($_GET["rerdvc"] <> 0)
 {
-	echo '<tr><td>Référence : </td><td><input type="text" name="rerdvc" maxlength="50" value="'.$rdvc->rerdvc().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="rerdvc" maxlength="50" value="'.$rdvc->rerdvc().'" /></td></tr>';
 	echo '<tr><td>Nom : </td><td><input type="text" name="derdvc" maxlength="50" value="'.$rdvc->Derdvc().'" /></td></tr>';
 }
 else
@@ -30,7 +30,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

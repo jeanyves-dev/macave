@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -20,7 +20,7 @@ echo '<form action="../gest/rect.gest.php"  method="post">';
 
 echo '<table>';
 if ($_GET["rerect"] <> 0)
-	{echo '<tr><td>Référence : </td><td><input type="text" name="rerect" maxlength="50" value="'.$rect->rerect().'" /></td></tr>';}
+	{echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="rerect" maxlength="50" value="'.$rect->rerect().'" /></td></tr>';}
 
 echo '<tr><td>Nom : </td><td><input type="text" name="derect" maxlength="50" value="'.$derect.'" /></td></tr>';
 
@@ -29,7 +29,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

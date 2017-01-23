@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -52,7 +52,7 @@ IF (isset($_GET["rebout"]) AND ($_GET["rebout"] <> 0))
 	$bonote = $bout->Bonote();
 	$degres = $bout->Degres();
 	
-	echo '<tr><td>Rérence : </td><td><input type="text" name="rebout" maxlength="50" value="'.$bout->rebout().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="rebout" maxlength="50" value="'.$bout->rebout().'" /></td></tr>';
 }
 else
 {
@@ -95,11 +95,11 @@ echo '</select>';
 echo '</td>';
 echo '</tr>';
 
-echo '<tr><td>Millésime : </td><td><input type="text" name="anmile" value="'.$anmile.'" maxlength="10" /></td></tr>';
-echo '<tr><td>Apogé : </td><td><input type="text" name="anapog" value="'.$anapog.'" maxlength="10" /></td></tr>';
+echo '<tr><td>Millfsime : </td><td><input type="text" name="anmile" value="'.$anmile.'" maxlength="10" /></td></tr>';
+echo '<tr><td>ApogÃ© : </td><td><input type="text" name="anapog" value="'.$anapog.'" maxlength="10" /></td></tr>';
 echo '<tr><td>A boire avant : </td><td><input type="text" name="anaboi" value="'.$anaboi.'" maxlength="10" /></td></tr>';
 echo '<tr><td>Note (/20) : </td><td><input type="text" name="bonote" value="'.$bonote.'" maxlength="10" /></td></tr>';
-echo '<tr><td>Degrès alcool : </td><td><input type="text" name="degres" value="'.$degres.'" maxlength="10" /></td></tr>';
+echo '<tr><td>DegrÃ©s alcool : </td><td><input type="text" name="degres" value="'.$degres.'" maxlength="10" /></td></tr>';
 echo '<tr><td>&nbsp;</td><td><input type="submit" value="Valider" name="Valider" /></td></tr>';
 			
 echo '</table>';

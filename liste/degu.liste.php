@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -13,17 +13,17 @@ require '../dao/vins.dao.php';
 
 require '../index/conn_db.php';
 
-// Récupération de la liste
+// RÃ©cupÃ©ration de la liste
 $degu_dao = new degu_dao($db);
 $mesdegu = $degu_dao->getList();
 
-echo '<p><a class="LienMenuGauche" href="../frm/degu.frm.php?redegu=0">Ajouter une dégustation</a></p>';
+echo '<p><a class="LienMenuGauche" href="../frm/degu.frm.php?redegu=0">Ajouter une DÃ©signation</a></p>';
 
 echo '<table width=100%>';
 echo '<tr>';
 echo '<td style="vertical-align:top;">';
 
-/* Entête du tableau */
+/* EntÃ¨te du tableau */
 echo '<table cellspacing=0 class="tableListe">';
 echo '<tr>';
 echo '<th class="thListe">No</a></th>';
@@ -70,7 +70,7 @@ $compteur = 1;
 
 if (isset($_GET['redegu']) AND ($_GET["redegu"] <> 0))
 {
-	echo '<p><a href="../frm/degl_1.frm.php?redegu='.$_GET["redegu"].'">Ajouter une bouteille en dégustation</a></p>';
+	echo '<p><a href="../frm/degl_1.frm.php?redegu='.$_GET["redegu"].'">Ajouter une bouteille en dÃ©gustation</a></p>';
 	$degl_dao = new degl_dao($db);
 	$mesdegl = $degl_dao->getListDegu($_GET["redegu"]);
 

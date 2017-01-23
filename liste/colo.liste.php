@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -15,7 +15,7 @@ $mescolo = $colo_dao->getList();
 echo '<p><a href="../frm/colo.frm.php?recolo=0">Ajouter une colonne</a></p>';
 
 echo '<table border = 1>';
-echo '<tr><td class="TitreListe">Référence</td><td class="TitreListe">Désignation</td><td class="TitreListe">empl</td><td colspan=2 class="TitreListe">Options</td></tr>';
+echo '<tr><td class="TitreListe">RÃ©fÃ©rence</td><td class="TitreListe">DÃ©signation</td><td class="TitreListe">empl</td><td colspan=2 class="TitreListe">Options</td></tr>';
 
 if (empty($mescolo))
 {
@@ -36,6 +36,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

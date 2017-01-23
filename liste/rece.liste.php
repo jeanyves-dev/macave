@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -18,8 +18,8 @@ echo '<p><a href="../frm/rece.frm.php?rerece=0">Ajouter une recette</a></p>';
 
 echo '<table border = 1>';
 echo '<tr>';
-echo '<td class="TitreListe">Référence</td>';
-echo '<td class="TitreListe">Désignation</td>';
+echo '<td class="TitreListe">RÃ©fÃ©rence</td>';
+echo '<td class="TitreListe">DÃ©signation</td>';
 echo '<td class="TitreListe">Plat</td>';
 echo '<td class="TitreListe">Type</td>';
 echo '<td colspan=2 class="TitreListe">Options</td></tr>';
@@ -44,6 +44,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

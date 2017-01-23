@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 /* Calendrier de consommation */
 
@@ -33,12 +33,12 @@ foreach ($mesanaboi as $unanaboi)
 		echo '<p>', $unanaboi, '</p>';
 		echo '<table border = 1>';
 		echo '<tr>';
-		echo '<td class="TitreListe">Référence</td>';
+		echo '<td class="TitreListe">RÃ©fÃ©rence</td>';
 		echo '<td class="TitreListe">Vin</td>';
 		echo '<td class="TitreListe">Couleur</td>';
 		echo '<td class="TitreListe">Gabarit</td>';
-		echo '<td class="TitreListe">Milésime</td>';
-		echo '<td class="TitreListe">Apogé</td>';
+		echo '<td class="TitreListe">MilÃ©sime</td>';
+		echo '<td class="TitreListe">ApogÃ©</td>';
 		echo '<td class="TitreListe">A boire avant</td>';
 		echo '<td class="TitreListe">Note (/20)</td>';
 		echo '<td class="TitreListe">Stock</td>';
@@ -74,6 +74,6 @@ foreach ($mesanaboi as $unanaboi)
 	}
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

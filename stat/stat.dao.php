@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 class stat_dao
 {
 private $_db;
@@ -100,7 +100,7 @@ public function getStat10($reclas)
 	return $nbrtot;
 }
 
-/* Stat Entrée par année */
+/* Stat EntrÃ©e par annÃ©e */
 public function getStat4()
 {
 	$res = array();

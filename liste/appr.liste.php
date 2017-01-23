@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -12,14 +12,14 @@ require '../index/conn_db.php';
 $appr_dao = new appr_dao($db);
 $mesappr = $appr_dao->getList();
 
-echo '<p><a href="../frm/appr.frm.php?reappr=0">Ajouter une appréciation</a></p>';
+echo '<p><a href="../frm/appr.frm.php?reappr=0">Ajouter une apprÃ©ciation</a></p>';
 
 echo '<table border = 1>';
-echo '<tr><td class="TitreListe">Référence</td><td class="TitreListe">Désignation</td><td colspan=2 class="TitreListe">Options</td></tr>';
+echo '<tr><td class="TitreListe">RÃ©fÃ©rence</td><td class="TitreListe">DÃ©signation</td><td colspan=2 class="TitreListe">Options</td></tr>';
 
 if (empty($mesappr))
 {
-  echo "pas d'appréciation !";
+  echo "pas d'apprÃ©ciation !";
 }
 else
 {
@@ -36,6 +36,6 @@ else
 }
 echo '</table>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

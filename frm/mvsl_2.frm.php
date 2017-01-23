@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -45,7 +45,7 @@ if (isset($_GET["remvsl"]) AND $_GET["remvsl"] <> 0)
 	$qtmvsl = $mvsl->qtmvsl();
 	$reappr = $mvsl->reappr();
 
-	echo '<tr><td>Référence : </td><td><input type="text" name="remvsl" maxlength="50" value="'.$remvsl.'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="remvsl" maxlength="50" value="'.$remvsl.'" /></td></tr>';
 	
 }
 
@@ -55,10 +55,10 @@ echo '<td><input type="text" name="rebout" maxlength="50" value="'.$rebout.'" />
 echo '</tr>';
 
 echo '<tr><td>Note : </td><td><input type="text" name="nomvsl" maxlength="50" value="'.$nomvsl.'" /></td></tr>';
-echo '<tr><td>Quantité : </td><td><input type="text" name="qtmvsl" maxlength="50" value="'.$qtmvsl.'" /></td></tr>';
+echo '<tr><td>QuantitÃ© : </td><td><input type="text" name="qtmvsl" maxlength="50" value="'.$qtmvsl.'" /></td></tr>';
 
 echo '<tr>';
-echo '<td>Appréciation</td>';
+echo '<td>ApprÃ©ciation</td>';
 echo '<td>';
 echo '<select id="reappr"  name="reappr">';
 foreach ($mesappr as $unappr)
@@ -79,6 +79,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

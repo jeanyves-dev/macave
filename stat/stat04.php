@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 /* Stat par appe */
 
@@ -23,7 +23,7 @@ echo '<p><a href="stat04.php?tystat=1">Table</a> - <a href="stat04.php?tystat=2"
 IF (isset($_GET["tystat"]) AND $_GET["tystat"] == "1")
 {
 	echo '<table border = 1>';
-	echo '<tr><td class="TitreListe">Désignation</td><td class="TitreListe">Quantité</td></tr>';
+	echo '<tr><td class="TitreListe">DÃ©signation</td><td class="TitreListe">QuantitÃ©</td></tr>';
 	foreach ($messtat as $unstat)
 	{
 		echo '<tr>';
@@ -41,7 +41,7 @@ IF (isset($_GET["tystat"]) AND $_GET["tystat"] == "1")
 	$StockTotal = $mvel_dao->getEntrTotal() - $mvsl_dao->getSortTotal();
 
 	echo '<table border = 1 width=100%>';
-	echo '<tr><td class="TitreListe">Désignation</td><td class="TitreListe">Quantité</td></tr>';
+	echo '<tr><td class="TitreListe">DÃ©signation</td><td class="TitreListe">QuantitÃ©</td></tr>';
 	foreach ($mesappe as $unappe)
 	{
 		$nbr = $stat_dao->getStat3($unappe->Reappe());
@@ -54,6 +54,6 @@ IF (isset($_GET["tystat"]) AND $_GET["tystat"] == "1")
 	echo '</table>';
 }*/
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

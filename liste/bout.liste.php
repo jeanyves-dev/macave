@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -32,12 +32,12 @@ echo '<p><a href="../frm/bout.frm.php?rebout=0&revins=0&Ori=bout.liste">Ajouter 
 
 echo '<table cellspacing=0 class="tableListe">';
 echo '<tr>';
-echo '<th class="thListe">Référence</th>';
+echo '<th class="thListe">RÃ©fÃ©rence</th>';
 echo '<th class="thListe">Vin</th>';
 echo '<th class="thListe">Couleur</th>';
 echo '<th class="thListe">Gabarit</th>';
-echo '<th class="thListe">Milésime</th>';
-echo '<th class="thListe">Apogé</th>';
+echo '<th class="thListe">MilÃ©sime</th>';
+echo '<th class="thListe">ApogÃ©</th>';
 echo '<th class="thListe">A boire avant</th>';
 echo '<th class="thListe">Note (/20)</th>';
 echo '<th class="thListe">Stock</th>';

@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -51,7 +51,7 @@ IF (isset($_GET["reenso"]) AND ($_GET["reenso"] <> 0))
 	$reappr = $enso->Reappr();
 	$deappr = $enso->Deappr($db);
 	
-	echo '<tr><td>Rérence : </td><td><input type="text" name="reenso" maxlength="50" value="'.$enso->reenso().'" /></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="reenso" maxlength="50" value="'.$enso->reenso().'" /></td></tr>';
 }
 elseif (isset($_GET["rebout"]) AND $_GET["rebout"] <> 0)
 {
@@ -112,21 +112,21 @@ echo '</td>';
 echo '</tr>';
 
 echo '<tr><td>Date</td><td><input type="date" name="daenso" value="'.$daenso.'" /></td></tr>';
-echo '<tr><td>Quantité</td><td><input type="text" name="qtenso" maxlength="50" value="'.$qtenso.'" /></td></tr>';
+echo '<tr><td>Quantitf</td><td><input type="text" name="qtenso" maxlength="50" value="'.$qtenso.'" /></td></tr>';
 
 if ($seenso == 2)
 {
-echo '<tr><td>Sens</td><td><INPUT type= "radio" name="seenso" value=1>Entrée';
+echo '<tr><td>Sens</td><td><INPUT type= "radio" name="seenso" value=1>EntrÃ©e';
 echo '<INPUT type= "radio" name="seenso" value=2 checked>Sortie</td></tr>';
 }
 else
 {
-echo '<tr><td>Sens</td><td><INPUT type= "radio" name="seenso" value=1 checked>Entrée';
+echo '<tr><td>Sens</td><td><INPUT type= "radio" name="seenso" value=1 checked>EntrÃ©e';
 echo '<INPUT type= "radio" name="seenso" value=2>Sortie</td></tr>';
 }
 
 echo '<tr>';
-echo '<td>Appréciation</td>';
+echo '<td>ApprÃ©ciation</td>';
 echo '<td>';
 echo '<select id="reappr" name="reappr">';
 

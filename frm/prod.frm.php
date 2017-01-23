@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 require '../index/header.php';
@@ -42,10 +42,10 @@ IF ($_GET["reprod"] <> 0)
 	$admail = $prod->admail();
 	$adrweb = $prod->adrweb();
 	
-	echo '<tr><td>Référence : </td><td><input type="text" name="reprod" maxlength="50" value="'.$prod->reprod().'"/></td></tr>';
+	echo '<tr><td>RÃ©fÃ©rence : </td><td><input type="text" name="reprod" maxlength="50" value="'.$prod->reprod().'"/></td></tr>';
 }
 
-echo "<tr><td>Propriété : </td><td><select id='typrop' name='typrop'>";
+echo "<tr><td>PropriÃ©tÃ© : </td><td><select id='typrop' name='typrop'>";
 foreach ($mestbsd as $untbsd)
 {
 	if ($untbsd->retbsd() == $prod->typrop())
@@ -68,6 +68,6 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

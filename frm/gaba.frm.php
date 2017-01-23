@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 require '../index/header.php';
 
@@ -32,7 +32,7 @@ echo '</table>';
 
 echo '</form>';
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
 

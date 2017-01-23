@@ -1,4 +1,4 @@
-
+ï»¿
 <?php
 
 	require '../index/header.php';
@@ -44,8 +44,8 @@
 	echo '</tr>';
 	echo '<tr>';
 	
-	/* Echéancier */
-	echo '<td class="tdAccueil">Echéancier</td>';
+	/* EchÃ©ancier */
+	echo '<td class="tdAccueil">EchÃ©ancier</td>';
 	/* Prochaine RDV */
 	echo '<td class="tdAccueil">Les prochains Rendez vous</td>';
 	
@@ -54,7 +54,7 @@
 	echo '</table>';
 	
 	
-	require '../index/Footer.php';
+	require '../index/footer.php';
 ?>
 
 
