@@ -44,7 +44,7 @@ if ($_GET["remven"] <> 0)
 	echo '</select></td></tr>';
 
 	
-	echo '<tr><td>note : </td><td><input type="text" name="nomven" maxlength="50" value="'.$mven->nomven().'" /></td></tr>';
+	echo '<tr><td>Commentaires : </td><td><input type="text" name="nomven" maxlength="50" value="'.$mven->nomven().'" /></td></tr>';
 	
 	echo '<tr><td>Fournisseur : </td><td><select id="refour" name="refour">';
 	foreach ($mesfour as $unfour)
@@ -63,7 +63,7 @@ else
 	foreach ($mestbsd as $untbsd)
 		{echo '<option value=',$untbsd->retbsd(),'>',$untbsd->detbsd(),'</option>';}
 	echo '</select></td></tr>';
-	echo '<tr><td>note : </td><td><input type="text" name="nomven" maxlength="50" /></td></tr>';
+	echo '<tr><td>Commentaires : </td><td><input type="text" name="nomven" maxlength="50" /></td></tr>';
 	echo '<tr><td>fournisseur : </td><td><select id="refour" name="refour">';
 	foreach ($mesfour as $unfour)
 		{echo '<option value=',$unfour->refour(),'>',$unfour->defour(),'</option>';}

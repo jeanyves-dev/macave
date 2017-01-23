@@ -26,7 +26,7 @@ echo '<td>';
 
 echo '<p><a href="../frm/mvso.frm.php?remvso=0">Ajouter une sortie</a></p>';
 echo '<table cellspacing=0 class="tableListe">';
-echo '<tr><th class="thListe">Référence</th><th class="thListe">Date</th><th class="thListe">Notes</th><th colspan=3 class="thListe">Options</th></tr>';
+echo '<tr><th class="thListe">Référence</th><th class="thListe">Date</th><th class="thListe">Commentaires</th><th colspan=3 class="thListe">Options</th></tr>';
 if (empty($mesmvso))
 {
   echo 'pas de sortie !';

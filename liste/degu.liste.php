@@ -28,7 +28,7 @@ echo '<table cellspacing=0 class="tableListe">';
 echo '<tr>';
 echo '<th class="thListe">No</a></th>';
 echo '<th class="thListe">Date</a></th>';
-echo '<th class="thListe">Note</a></th>';
+echo '<th class="thListe">Commentaire</a></th>';
 echo '<th class="thListe" colspan=3>Options</th>';
 echo '</tr>';
 

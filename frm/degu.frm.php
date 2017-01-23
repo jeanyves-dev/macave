@@ -22,12 +22,12 @@ if ($_GET["redegu"] <> 0)
 {
 	echo '<tr><td>Référence : </td><td><input type="text" name="redegu" maxlength="50" value="'.$degu->redegu().'" /></td></tr>';
 	echo '<tr><td>Date : </td><td><input type="date" name="dadegu" maxlength="50" value="'.$degu->dadeg2().'" /></td></tr>';
-	echo '<tr><td>note : </td><td><input type="text" name="nodegu" maxlength="200" value="'.$degu->nodegu().'" /></td></tr>';
+	echo '<tr><td>Commentaires : </td><td><input type="text" name="nodegu" maxlength="200" value="'.$degu->nodegu().'" /></td></tr>';
 }
 else
 {
 	echo '<tr><td>Date : </td><td><input type="date" name="dadegu" maxlength="50" /></td></tr>';
-	echo '<tr><td>note : </td><td><input type="text" name="nodegu" maxlength="200" /></td></tr>';
+	echo '<tr><td>Commentaires : </td><td><input type="text" name="nodegu" maxlength="200" /></td></tr>';
 }
 echo '<tr><td>&nbsp;</td><td><input type="submit" value="Valider" name="Valider" /></td></tr>';
 echo '</table>';

@@ -52,7 +52,7 @@ echo '<td>Ref bouteille : </td>';
 echo '<td><input type="text" name="rebout" maxlength="50" value="'.$rebout.'" /></td>';
 echo '</tr>';
 
-echo '<tr><td>Note : </td><td><input type="text" name="nomvel" maxlength="50" value="'.$nomvel.'" /></td></tr>';
+echo '<tr><td>Commentaire : </td><td><input type="text" name="nomvel" maxlength="50" value="'.$nomvel.'" /></td></tr>';
 echo '<tr><td>Quantité : </td><td><input type="text" name="qtmvel" maxlength="50" value="'.$qtmvel.'" /></td></tr>';
 echo $mtbout;
 echo '<tr><td>&nbsp;</td><td><input type="submit" value="Valider" name="Valider" /></td></tr>';

@@ -70,7 +70,7 @@ echo '</select>';
 echo '</td>';
 echo '</tr>';
 
-echo '<tr><td>Note : </td><td><input type="text" name="nomvsl" maxlength="50" value="'.$nomvsl.'" /></td></tr>';
+echo '<tr><td>Commentaires : </td><td><input type="text" name="nomvsl" maxlength="50" value="'.$nomvsl.'" /></td></tr>';
 echo '<tr><td>Quantité : </td><td><input type="text" name="qtmvsl" maxlength="50" value="'.$qtmvsl.'" /></td></tr>';
 
 echo '<tr>';
