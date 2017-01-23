@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -24,10 +24,10 @@ IF ($_GET["revins"] <> 0)
 	echo '<tr>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.a.php?revins=',$vins->Revins(),'&rebout=0>La reserve</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.b.php?revins=',$vins->Revins(),'>Fiche du vin</a></th>';
-	echo '<th class="thFicheEnCours">Cépage</th>';
+	echo '<th class="thFicheEnCours">CÃ©page</th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.d.php?revins=',$vins->Revins(),'>Accord mets / vins</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>Dégustation</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>Récompense</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>DÃ©gustation</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>RÃ©compense</a></th>';
 	echo '</tr>';
 	
 	echo '<tr>';
@@ -35,14 +35,14 @@ IF ($_GET["revins"] <> 0)
 	echo '<td colspan=6 class="tdFiche1">';
 	
 	echo '<table cellpadding=0 cellspacing=0>';
-	echo '<tr><th class="thFiche3">Cépages</th></tr>';
+	echo '<tr><th class="thFiche3">CÃ©pages</th></tr>';
 	echo '<tr>';
 	
-	/* Affiche des cépages */
+	/* Affiche des cÃ©pages */
 	echo '<td class="tdFiche3">';
 	$mescepa = $cepa_dao->getList();
 	echo '<form action="../gest/cepv.gest.php?ori=vins.fiche&mode=ajt&revins='.$vins->Revins().'"  method="post">';
-	echo 'Quantité<input type="text" name="qtcepv" maxlength="5" />';
+	echo 'QuantitÃ©<input type="text" name="qtcepv" maxlength="5" />';
 	echo '<SELECT name="recepa">';
 	foreach ($mescepa as $uncepa)
 		{echo '<option value=',$uncepa->recepa(),'>',$uncepa->Decepa(),'</option>';}
@@ -52,7 +52,7 @@ IF ($_GET["revins"] <> 0)
 	echo '<table cellspacing=0 class="tableDetailFiche">';
 	echo '<tr>';
 	echo '<th class="thDetailFiche">Cepage</th>';
-	echo '<th class="thDetailFiche">Quantité</th>';
+	echo '<th class="thDetailFiche">QuantitÃ©</th>';
 	echo '<th class="thDetailFiche">Option</th>';
 	echo '</tr>';
 	$mescepv = $cepv_dao->getList($vins->Revins());
@@ -77,6 +77,6 @@ IF ($_GET["revins"] <> 0)
 
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

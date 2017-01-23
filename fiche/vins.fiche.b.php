@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -55,10 +55,10 @@ IF ($_GET["revins"] <> 0)
 	echo '<tr>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.a.php?revins=',$vins->Revins(),'&rebout=0>La reserve</a></th>';
 	echo '<th class="thFicheEnCours">Fiche du vin</th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.c.php?revins=',$vins->Revins(),'>Cépage</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.c.php?revins=',$vins->Revins(),'>CÃ©page</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.d.php?revins=',$vins->Revins(),'>Accord mets / vins</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>Dégustation</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>Récompense</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>DÃ©station</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>RÃ©mpense</a></th>';
 	echo '</tr>';
 
 	
@@ -84,12 +84,12 @@ IF ($_GET["revins"] <> 0)
 	/* Affichage du vin */
 	echo '<td class="tdFiche3">';
 	echo '<table>';
-	echo '<tr><td><b>Référence</b></td><td>'.$vins->Revins().'</td></tr>';
-	echo '<tr><td><b>Désignation</b></td><td>'.$vins->Devins().'</td></tr>';
-	echo '<tr><td><b>Cuvée</b></td><td>'.$vins->Cuvins().'</td></tr>';
-	echo '<tr><td><b>Autre libellé</b></td><td>'.$vins->Devinb().'</td></tr>';
+	echo '<tr><td><b>RÃ©fÃ©rence</b></td><td>'.$vins->Revins().'</td></tr>';
+	echo '<tr><td><b>DÃ©signation</b></td><td>'.$vins->Devins().'</td></tr>';
+	echo '<tr><td><b>CuvÃ©e</b></td><td>'.$vins->Cuvins().'</td></tr>';
+	echo '<tr><td><b>Autre libellÃ©</b></td><td>'.$vins->Devinb().'</td></tr>';
 	echo '<tr><td><b>Pays</b></td><td>'.$vins->Depays($db).'</td></tr>';
-	echo '<tr><td><b>Région</b></td><td>'.$vins->Deregi($db).'</td></tr>';
+	echo '<tr><td><b>RÃ©gion</b></td><td>'.$vins->Deregi($db).'</td></tr>';
 	echo '<tr><td><b>Appellation</b></td><td>'.$vins->Deappe($db).'</td></tr>';
 	echo '<tr><td><b>Producteur</b></td><td>'.$vins->Deprod($db).'</td></tr>';
 	echo '<tr><td><b>Couleur</b></td><td>'.$vins->Decoul($db).'</td></tr>';
@@ -106,11 +106,11 @@ IF ($_GET["revins"] <> 0)
 	$prod = $prod_dao->get($vins->Reprod());
 	echo '<td class="tdFiche3">';
 	echo '<table>';
-	echo '<tr><td><b>Référence</b></td><td>'.$prod->Reprod().'</td></tr>';
-	echo '<tr><td><b>Propriété</b></td><td>'.$prod->Detyprop($db).'</td></tr>';
+	echo '<tr><td><b>RÃ©fÃ©rence</b></td><td>'.$prod->Reprod().'</td></tr>';
+	echo '<tr><td><b>PropriÃ©tÃ©</b></td><td>'.$prod->Detyprop($db).'</td></tr>';
 	echo '<tr><td><b>Nom</b></td><td>'.$prod->Deprod().'</td></tr>';
 	echo '<tr><td><b>Adresse</b></td><td>'.$prod->Adresa().'</td></tr>';
-	echo '<tr><td><b>Complément</b></td><td>'.$prod->Adresb().'</td></tr>';
+	echo '<tr><td><b>ComplÃ©ment</b></td><td>'.$prod->Adresb().'</td></tr>';
 	echo '<tr><td><b>Code postale</b></td><td>'.$prod->Codpos().'</td></tr>';
 	echo '<tr><td><b>Ville</b></td><td>'.$prod->Villep($db).'</td></tr>';
 	echo '<tr><td><b>Adresse mail</b></td><td><a href="mailto:'.$prod->Admail().'">'.$prod->Admail().'</a></td></tr>';
@@ -124,10 +124,10 @@ IF ($_GET["revins"] <> 0)
 	echo '<td class="tdFiche3">';
 	echo '<table>';
 	echo '<tr><td><b>Nombre de bouteille</b></td><td>'.$vins->NbrBout($db).'</td></tr>';
-	echo '<tr><td><b>Quantité total en stock</b></td><td>'.$vins->QteStkTot($db).'</td></tr>';
-	echo "<tr><td><b>Nombre d'entrée</b></td><td>".$vins->NbrEnt($db)."</td></tr>";
+	echo '<tr><td><b>QuantitÃ© total en stock</b></td><td>'.$vins->QteStkTot($db).'</td></tr>';
+	echo "<tr><td><b>Nombre d'entrÃ©e</b></td><td>".$vins->NbrEnt($db)."</td></tr>";
 	echo "<tr><td><b>Nombre de sortie</b></td><td>".$vins->NbrSor($db)."</td></tr>";
-	echo "<tr><td><b>Nombre de bouteille rangées</b></td><td>".$vins->NbrRan($db)."</td></tr>";
+	echo "<tr><td><b>Nombre de bouteille rangÃ©es</b></td><td>".$vins->NbrRan($db)."</td></tr>";
 	echo '</table>';
 	echo '</td>';
 	
@@ -143,6 +143,6 @@ IF ($_GET["revins"] <> 0)
 
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

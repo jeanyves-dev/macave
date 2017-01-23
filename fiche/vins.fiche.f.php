@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -29,8 +29,8 @@ IF ($_GET["revins"] <> 0)
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.b.php?revins=',$vins->Revins(),'>Fiche du vin</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.c.php?revins=',$vins->Revins(),'>Cepage</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.d.php?revins=',$vins->Revins(),'>Accord mets / vins</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>Dégustation</a></th>';
-	echo '<th class="thFicheEnCours">Récompense</th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>DÃ©gustation</a></th>';
+	echo '<th class="thFicheEnCours">RÃ©compense</th>';
 	echo '</tr>';
 	
 	echo '<tr>';
@@ -39,7 +39,7 @@ IF ($_GET["revins"] <> 0)
 	
 	
 	echo '<table cellpadding=0 cellspacing=0>';
-	echo '<tr><th class="thFiche3">Récompenses</th></tr>';
+	echo '<tr><th class="thFiche3">RÃ©compenses</th></tr>';
 	echo '<tr>';
 	
 	/* Ajouter une medaille */
@@ -57,17 +57,17 @@ IF ($_GET["revins"] <> 0)
 	foreach ($mestbsd as $untbsd)
 		{echo '<option value=',$untbsd->retbsd(),'>',$untbsd->Detbsd(),'</option>';}
 	echo '</select></td></tr>';
-	echo '<tr><td>Période</td><td><input type="text" name="period" maxlength="4" /></td></tr>';
+	echo '<tr><td>PÃ©riode</td><td><input type="text" name="period" maxlength="4" /></td></tr>';
 	echo '<tr><td>&nbsp;</td><td><input type="submit" value="Ajouter" name="Valider" /></td></tr>';
 	echo '</table>';
 	echo '</form>';
 	
-	/* Liste des récompenses */
+	/* Liste des rÃ©compenses */
 	echo '<table cellspacing=0 class="tableDetailFiche">';
 	echo '<tr>';
 	echo '<th class="thDetailFiche">Concours</th>';
-	echo '<th class="thDetailFiche">Médaille</th>';
-	echo '<th class="thDetailFiche">Période</th>';
+	echo '<th class="thDetailFiche">MÃ©daille</th>';
+	echo '<th class="thDetailFiche">PÃ©riode</th>';
 	echo '<th class="thDetailFiche">Options</th>';
 
 	echo '</tr>';
@@ -93,12 +93,8 @@ IF ($_GET["revins"] <> 0)
 	echo '</tr>';
 	echo '</table>';
 
-
-
-
-
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

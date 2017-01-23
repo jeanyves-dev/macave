@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -46,10 +46,10 @@ IF ($_GET["revins"] <> 0)
 	echo '<tr>';
 	echo '<th class="thFicheEnCours">La reserve</th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.b.php?revins=',$vins->Revins(),'>Fiche du vin</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.c.php?revins=',$vins->Revins(),'>Cépage</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.c.php?revins=',$vins->Revins(),'>CÃ©page</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.d.php?revins=',$vins->Revins(),'>Accord mets / vins</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>Dégustation</a></th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>Récompense</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.e.php?revins=',$vins->Revins(),'>DÃ©gustation</a></th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>RÃ©mpense</a></th>';
 	echo '</tr>';
 	
 	echo '<tr>';
@@ -71,14 +71,14 @@ IF ($_GET["revins"] <> 0)
 	echo '<table cellspacing=0 class="tableDetailFiche">';
 	echo '<tr>';
 	echo '<th class="thDetailFiche">Gabarit</th>';
-	echo '<th class="thDetailFiche">Milésime</th>';
-	echo '<th class="thDetailFiche">Apogé</th>';
+	echo '<th class="thDetailFiche">MilÃ©sime</th>';
+	echo '<th class="thDetailFiche">ApogÃ©</th>';
 	echo '<th class="thDetailFiche">A boire avant</th>';
 	echo '<th class="thDetailFiche">Note (/20)</th>';
 	echo '<th class="thDetailFiche">En stock</th>';
-	echo "<th class='thDetailFiche'>Nombre d'entrée</th>";
+	echo "<th class='thDetailFiche'>Nombre d'entrÃ©e</th>";
 	echo '<th class="thDetailFiche">Nombre de sortie</th>';
-	echo '<th class="thDetailFiche">Degrès alcool</th>';	
+	echo '<th class="thDetailFiche">DegrÃ©s alcool</th>';	
 	echo '<th class="thDetailFiche">Tarif moyen</th>';
 	echo '<th class="thDetailFiche" colspan=2>Options</th>';
 	echo '</tr>';
@@ -106,7 +106,7 @@ IF ($_GET["revins"] <> 0)
 			echo '<td class="tdDetailFiche">', $unbout->QtEntr($db), '</td>';
 			echo '<td class="tdDetailFiche">', $unbout->QtSort($db), '</td>';
 			echo '<td class="tdDetailFiche">', $unbout->Degres(), '</td>';
-			echo '<td class="tdDetailFiche">', $unbout->TarAvg($db), ' €</td>';
+			echo '<td class="tdDetailFiche">', $unbout->TarAvg($db), ' â‚¬</td>';
 			echo '<td class="tdDetailFiche"><a href=../fiche/vins.fiche.a.php?revins=',$vins->Revins(),'&rebout='.$unbout->Rebout().'><img src="../img/Info.png"></a></td>';
 			echo '<td class="tdDetailFiche"><a href=../frm/bout.frm.php?Ori=bout.liste&rebout=',$unbout->Rebout(),'><img src="../img/Edit.png"></a></td>';
 
@@ -130,22 +130,22 @@ IF ($_GET["revins"] <> 0)
 	echo '<table cellpadding=0 cellspacing=0>';
 	echo '<tr><th class="thFiche3">Mouvements stock</th></tr>';
 	echo '<tr>';
-	/* Affichage des entrées en stock */
+	/* Affichage des entrÃ©es en stock */
 	echo '<td class="tdFiche3">';
 	echo '<table cellspacing=0 class="tableDetailFiche">';
 	echo '<tr>';
 	echo '<th class="thDetailFiche">Type</th>';
 	echo '<th class="thDetailFiche">Gabarit</th>';
-	echo '<th class="thDetailFiche">Milésime</th>';
+	echo '<th class="thDetailFiche">MilÃ©sime</th>';
 	echo '<th class="thDetailFiche">Date</th>';
-	echo '<th class="thDetailFiche">Quantité</th>';
-	echo '<th class="thDetailFiche">Four / appréciation</th>';
+	echo '<th class="thDetailFiche">QuantitÃ©</th>';
+	echo '<th class="thDetailFiche">Four / apprÃ©ciation</th>';
 	echo '</tr>';
 	$mesmvel = $mvel_dao->getListeBout($rebout);
 	foreach ($mesmvel as $unmvel)
 	{
 		echo '<tr>';
-		echo '<td class="tdDetailFiche">Entrée</td>';
+		echo '<td class="tdDetailFiche">EntrÃ©e</td>';
 		echo '<td class="tdDetailFiche">', $bout->Degaba($db), '</td>';
 		echo '<td class="tdDetailFiche">', $bout->Anmile(), '</td>';
 		echo '<td class="tdDetailFiche">', $unmvel->Damven($db), '</td>';
@@ -181,11 +181,11 @@ IF ($_GET["revins"] <> 0)
 	echo '<table cellspacing=0 class="tableDetailFiche">';
 	echo '<tr>';
 	echo '<th class="thDetailFiche">Gabarit</th>';
-	echo '<th class="thDetailFiche">Milésime</th>';
+	echo '<th class="thDetailFiche">MilÃ©sime</th>';
 	echo '<th class="thDetailFiche">Emplacement</th>';
 	echo '<th class="thDetailFiche">Colonne</th>';
 	echo '<th class="thDetailFiche">Casier</th>';
-	echo '<th class="thDetailFiche">Quantité</th>';
+	echo '<th class="thDetailFiche">QuantitÃ©</th>';
 	echo '</tr>';
 	/*$rang_dao = new rang_dao($db);
 	$mesrang = $rang_dao->getListCasiBout($rebout);
@@ -249,6 +249,6 @@ IF ($_GET["revins"] <> 0)
 
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>

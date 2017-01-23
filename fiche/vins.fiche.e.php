@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 require '../index/header.php';
 
@@ -33,8 +33,8 @@ IF ($_GET["revins"] <> 0)
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.b.php?revins=',$vins->Revins(),'>Fiche du vin</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.c.php?revins=',$vins->Revins(),'>Cepage</a></th>';
 	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.d.php?revins=',$vins->Revins(),'>Accord mets / vins</a></th>';
-	echo '<th class="thFicheEnCours">Dégustation</th>';
-	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>Récompense</a></th>';
+	echo '<th class="thFicheEnCours">DÃ©gustation</th>';
+	echo '<th class="thFiche1"><a href=../fiche/vins.fiche.f.php?revins=',$vins->Revins(),'>RÃ©compense</a></th>';
 	echo '</tr>';
 	
 	echo '<tr>';
@@ -42,7 +42,7 @@ IF ($_GET["revins"] <> 0)
 	echo '<td colspan=6 class="tdFiche1">';
 	
 	echo '<table cellpadding=0 cellspacing=0>';
-	echo '<tr><th class="thFiche3">Dégustation</th></tr>';
+	echo '<tr><th class="thFiche3">DÃ©gustation</th></tr>';
 	echo '<tr>';
 	
 	echo '<td class="tdFiche3">';
@@ -51,7 +51,7 @@ IF ($_GET["revins"] <> 0)
 	echo '<table cellspacing=0 class="tableDetailFiche">';
 	echo '<tr>';
 	echo '<th class="thDetailFiche">Gabarit</th>';
-	echo '<th class="thDetailFiche">Milésime</th>';
+	echo '<th class="thDetailFiche">MilÃ©sime</th>';
 	echo '<th class="thDetailFiche">Date</th>';
 	echo '<th class="thDetailFiche">Notes</th>';
 	echo '<th class="thDetailFiche">Visuel</th>';
@@ -98,12 +98,8 @@ IF ($_GET["revins"] <> 0)
 	echo '</tr>';
 	echo '</table>';
 
-
-
-
-
 }
 
-require '../index/Footer.php';
+require '../index/footer.php';
 
 ?>
