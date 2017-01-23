@@ -62,7 +62,7 @@ if ($_GET["remvso"] <> 0)
 	$mvsl_dao = new mvsl_dao($db);
 	$mesmvsl = $mvsl_dao->getListmvso($_GET["remvso"]);
 	echo '<table cellspacing=0 class="tableListe">';
-	echo '<tr><th class="thListe">Référence</th><th class="thListe">Bouteille</th><th class="thListe">Désignation</th><th class="thListe">Quantité</th><th class="thListe">Appréciation</th><th colspan=2 class="thListe">Options</th></tr>';
+	echo '<tr><th class="thListe">Référence</th><th class="thListe">Bouteille</th><th class="thListe">Commentaire</th><th class="thListe">Quantité</th><th class="thListe">Appréciation</th><th colspan=2 class="thListe">Options</th></tr>';
 	if (empty($mesmvsl))
 	{
 	  echo 'pas de bouteille !';
@@ -81,7 +81,7 @@ if ($_GET["remvso"] <> 0)
 			echo '<td class="tdListe">', $unmvsl->Nomvsl(), '</td>';
 			echo '<td class="tdListe">', $unmvsl->Qtmvsl(), '</td>';
 			echo '<td class="tdListe">', $unmvsl->Deappr($db), '</td>';
-			echo '<td class="tdListeOption"><a href=../frm/mvsl.frm.php?remvsl=',$unmvsl->Remvsl(),'><img src="../img/Edit.png"></a></td>';
+			echo '<td class="tdListeOption"><a href=../frm/mvsl_2.frm.php?remvso=',$unmvsl->Remvso(),'&remvsl=',$unmvsl->Remvsl(),'><img src="../img/Edit.png"></a></td>';
 			echo '<td class="tdListeOption"><a href=../gest/mvsl.gest.php?remvsl=',$unmvsl->Remvsl(),'&mode=del><img src="../img/Delete.png"></a></td>';
 			echo '</tr>';
 		}
