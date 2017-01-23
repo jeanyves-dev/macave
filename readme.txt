@@ -1,3 +1,0 @@
-- gérer pays au niveau de région
-- gérer couleur au niveau de la couleur
-- modifier tous les "nom" en dexxxx dans le frm
