@@ -396,7 +396,6 @@ CREATE TABLE `mens` (
 
 --
 -- Contenu de la table `mens`
---
 
 INSERT INTO `mens` (`remens`, `demens`, `remenu`, `limenu`, `norang`) VALUES
 (1, 'Les vins', 2, '../liste/vins.liste.php', 1),
@@ -414,6 +413,7 @@ INSERT INTO `mens` (`remens`, `demens`, `remenu`, `limenu`, `norang`) VALUES
 (13, 'Categorie RDV', 8, '../liste/rdvc.liste.php', 11),
 (14, 'Type de recette', 8, '../liste/rect.liste.php', 12),
 (15, 'Plat', 8, '../liste/plat.liste.php', 13),
+(30, 'Appréciation', 8, '../liste/appr.liste.php', 14),
 (16, 'Inventaire', 2, '../liste/boutb.liste.php', 3),
 (17, 'Les entrées', 2, '../liste/mven.liste.php', 4),
 (18, 'Les sorties', 2, '../liste/mvso.liste.php', 5),
