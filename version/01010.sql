@@ -13,8 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `macave`
 --
-CREATE DATABASE IF NOT EXISTS `macave_test03` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `macave_test03`;
+CREATE DATABASE IF NOT EXISTS `macave` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `macave`;
 
 -- --------------------------------------------------------
 
@@ -38,3 +38,7 @@ CREATE TABLE `util` (
 --
 ALTER TABLE `util`
   ADD PRIMARY KEY (`inutil`);
+
+
+INSERT INTO `mens` (`demens`, `remenu`, `limenu`, `norang`) VALUES
+('Utilisateurs', 8, '../liste/util.liste.php', 15);
